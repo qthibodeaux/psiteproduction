@@ -1,0 +1,122 @@
+.contactContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    margin-top: 4rem;
+}
+
+.contactLeft {
+    display: flex;
+    justify-content: center;
+}
+
+.flowerDiv {
+    background-color: black;
+    padding: 8rem;
+    width: 75%;
+    max-height: 50rem;
+    max-width: 30rem;
+}
+
+.flowerImg {
+    max-width: 100%;
+    max-height: 100%;
+    border: 10px solid white;
+    object-fit: contain;
+}
+
+.contactRight {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    max-width: 650px;
+}
+
+.formDiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.formDiv > label {
+    margin-bottom: 0.5rem;
+}
+
+.formDiv > input {
+    margin-bottom: 3rem;
+    padding: 0.8rem;
+    border: 2px solid black;
+}
+
+.formDiv > textarea {
+    margin-bottom: 3rem;
+    padding: 0.8rem;
+    border: 2px solid black;
+}
+
+.contactBtn {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+}
+
+.contactBtn:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+@media screen and (max-width: 1200px) {
+    .flowerDiv {
+        background-color: black;
+        padding: 5rem;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .flowerDiv {
+        background-color: black;
+        padding: 5rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .flowerDiv {
+        background-color: black;
+        padding: 4rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .flowerDiv {
+        background-color: black;
+        padding: 2rem;
+        height: 25rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contactContainer {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        margin-top: 0rem;
+    }
+
+    .flowerDiv {
+        display: none;
+    }
+
+    .contactRight {
+        display: flex;
+        width: 100%;
+    }
+
+    .formDiv {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+}

@@ -1,0 +1,81 @@
+.entranceContainer {
+    background-image: url(../assets/hero.jpg);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem;
+}
+
+.navLinks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.brandDiv {
+    display: flex;
+}
+
+.brand {
+    color: black;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.navDiv {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.navA {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 0.25rem;
+}
+
+.navA > * {
+    margin-top: 0.55rem;
+}
+
+.navIcons {
+    color: black;
+    font-size: 2rem;
+}
+
+.navIcons:hover {
+    color: black;
+}
+
+.enterButton {
+    border: 4px solid black;
+    padding-bottom: 0.25rem;
+    padding-top: 0.25rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    height: 3rem;
+    width: 6rem;
+    font-weight: 700;
+    color: black;
+}
+
+.enterButton:hover {
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .navA {
+        display: none;
+    }
+
+    .brandDiv {
+        display: flex;
+        flex-direction: column;
+    }
+}

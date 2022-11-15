@@ -1,0 +1,87 @@
+.mainContainer {
+    padding-top: 2rem;
+}
+
+.navSet {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+}
+
+.navItems {
+    display: flex;
+    gap: 1.5rem;
+    list-style-type: none;
+}
+
+.navItems > li {
+    font-weight: 600;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.smallNav {
+    display: none;
+}
+
+.navBrand {
+    display: flex;
+}
+
+.expanded {
+    display: flex;
+    flex-direction: column;
+}
+
+.navBtn {
+    background-color: white;
+    padding: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.3rem;
+    color: black;
+}
+
+.expandBtn {
+    background-color: lightgray;
+    color: black;
+    padding: 1rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.3rem;
+}
+
+.foot {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 3rem;
+}
+
+.loginDiv {
+    border: 1px solid black;
+    display: flex;
+}
+
+@media screen and (max-width: 600px) {
+    .mainContainer {
+        padding: 0
+    }
+
+    .navSet {
+        display: none;
+    }
+
+    .smallNav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .foot {
+        padding: 2rem;
+        justify-content: space-between;
+    }
+}
